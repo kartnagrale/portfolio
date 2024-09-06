@@ -103,5 +103,59 @@ body {
 .image-content img {
     width: 500px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(229, 130, 10, 0.3);
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    background-color: #111;
+    color: white;
+    border-radius: 10px;
+}
+
+.about-content {
+    width: 60%;
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 3em;
+    color: #FF6600;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.about-content a {
+    color: #FF6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+.game-container {
+    width: 35%;
+    text-align: center;
+}
+
+.glow-text {
+    color: #FF6600;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #FF6600, 0 0 20px #FF6600;
+}
+
+canvas {
+    border: 2px solid #FF6600;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FF6600;
 }
