@@ -1,80 +1,107 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #0066CC; /* Sky blue background */
 }
 
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Header Styling */
+.landing-header {
+    background-color: #111;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FF6600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FF6600;
+}
+
+/* Landing Page Styling */
 #landing {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100vh;
+    background: linear-gradient(135deg, #111, #333);
+    padding: 0 80px;
 }
 
 .text-content h1 {
     font-size: 3.5em;
     font-weight: bold;
-    color: white;
+    color: #FF6600;
 }
 
-.text-content p {
+.text-content .role {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #ff9f50;
+}
+
+.text-content .description {
     font-size: 1.2em;
     margin-bottom: 30px;
-    color: white;
+    color: #e6e6e6;
 }
 
+/* CTA Button Styling */
 .cta-button {
-    background-color: #FF9500;
+    background-color: #FF6600;
     padding: 15px 30px;
-    color: white;
+    color: #111;
     border-radius: 30px;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #e07b00;
+    background-color: #e65c00;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px 5px rgba(255, 102, 0, 0.8); /* Glowing effect */
 }
 
+
+/* Image Styling */
 .image-content img {
     width: 500px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#projects {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .section-title {
-    font-size: 2.5em;
-    font-weight: bold;
-  }
-  
-  .project-link:hover {
-    text-decoration: underline;
-  }  
-
-@media (max-width: 768px) {
-    #landing {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-    
-    .image-content img {
-        width: 100%;
-        margin-top: 20px;
-    }
-    
-    .text-content h1 {
-        font-size: 2.5em;
-    }
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
