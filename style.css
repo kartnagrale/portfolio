@@ -169,7 +169,7 @@ canvas {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     background: linear-gradient(135deg, #ff6600, #ff9933);
     padding: 40px;
 }
@@ -319,4 +319,13 @@ canvas {
 
 .button-box button:active {
     transform: translateY(2px);
+}
+
+
+/* Copyright Section */
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #f4f4f4;
 }
