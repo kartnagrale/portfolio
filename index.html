@@ -78,30 +78,39 @@
                     <li><i class="fas fa-map-marker-alt"></i> Nagpur, Maharashtra, India</li>
                 </ul>
                 <div class="social-media">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kartik-nagrale/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/kartnagrale" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
 
             <div class="contact-form">
-                <form id="contactForm">
+
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+
+                    <input type="hidden" name="access_key" value="03a2308f-dca9-4c5c-a77d-a81fc258a716">
+
                     <div class="input-box">
-                        <input type="text" id="name" required>
+                        <input type="text" id="name" name="name" required>
                         <label for="name">Name</label>
                     </div>
                     <div class="input-box">
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" name="email" required>
                         <label for="email">Email</label>
                     </div>
                     <div class="input-box">
-                        <textarea id="message" required></textarea>
+                        <textarea id="message" name="message" required></textarea>
                         <label for="message">Message</label>
                     </div>
+
+                    <input type="hidden" name="redirect" value="https://kartnagrale.github.io/portfolio/">
+
                     <div class="button-box">
                         <button type="submit">Send Message</button>
                     </div>
+                    <div id="result"></div>
                 </form>
+
                 <div class="copyright"></div>
                     <p>&copy; 2024 Kartik Nagrale. All rights reserved.</p>
                 </div>

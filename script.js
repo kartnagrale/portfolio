@@ -196,12 +196,3 @@ function evaluateWinner(board) {
 
 // Initial draw
 drawGame();
-
-
-
-// contact section
-
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Your message has been sent successfully!');
-});
