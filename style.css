@@ -159,3 +159,164 @@ canvas {
     border-radius: 10px;
     box-shadow: 0 0 10px #FF6600;
 }
+
+
+
+
+/* contact section */
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff6600, #ff9933);
+    padding: 40px;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 40px;
+    background-color: #333;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff9933;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+}
+
+.info-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.info-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.info-list li i {
+    margin-right: 10px;
+    color: #ff9933;
+    font-size: 20px;
+}
+
+.social-media a {
+    font-size: 24px;
+    color: #ff9933;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #cc5200;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 40px;
+    background-color: #262626;
+    color: #fff;
+}
+
+.contact-form h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 15px;
+    background: none;
+    border: 1px solid #ff9933;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: #ff9933;
+    background-color: rgba(255, 153, 51, 0.1);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #ff9933;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.input-box input:focus + label,
+.input-box textarea:focus + label,
+.input-box input:valid + label,
+.input-box textarea:valid + label {
+    top: -10px;
+    left: 15px;
+    font-size: 14px;
+    color: #ff9933;
+}
+
+.button-box {
+    text-align: center;
+}
+
+.button-box button {
+    background-color: #ff9933;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(255, 153, 51, 0.4);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-box button:hover {
+    background-color: #e68a00;
+    transform: translateY(-2px);
+}
+
+.button-box button:active {
+    transform: translateY(2px);
+}
