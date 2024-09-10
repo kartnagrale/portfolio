@@ -198,3 +198,37 @@ function evaluateWinner(board) {
 drawGame();
 
 
+
+
+
+
+
+// Skills Glow
+
+const skills = document.querySelectorAll('.skill');
+
+skills.forEach((skill, index) => {
+    skill.addEventListener('mouseenter', () => {
+        // Hovered element glows the brightest
+        skill.classList.add('brightest');
+        
+        // Immediate left and right glow slightly less
+        if (skills[index - 1]) skills[index - 1].classList.add('bright');
+        if (skills[index + 1]) skills[index + 1].classList.add('bright');
+
+        // Second immediate left and right glow even less
+        if (skills[index - 2]) skills[index - 2].classList.add('dim');
+        if (skills[index + 2]) skills[index + 2].classList.add('dim');
+    });
+
+    skill.addEventListener('mouseleave', () => {
+        // Remove glow classes when the mouse leaves
+        skill.classList.remove('brightest');
+        
+        if (skills[index - 1]) skills[index - 1].classList.remove('bright');
+        if (skills[index + 1]) skills[index + 1].classList.remove('bright');
+        
+        if (skills[index - 2]) skills[index - 2].classList.remove('dim');
+        if (skills[index + 2]) skills[index + 2].classList.remove('dim');
+    });
+});

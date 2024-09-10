@@ -167,6 +167,62 @@ canvas {
 }
 
 
+/* Skills Section */
+
+.skills-section {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.skills-section h1 {
+    color: #FF6600;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows the elements to wrap if the screen size is small */
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(255, 112, 3);
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: medium;
+    cursor: pointer;
+}
+
+/* Adding space between the logo and the skill text */
+.skill img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Brightest glow for hovered element */
+.skill.brightest {
+    transform: scale(1.2);
+    box-shadow: 0 0 30px rgba(255, 165, 0, 1);
+}
+
+/* Slightly less bright for immediate left and right */
+.skill.bright {
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+}
+
+/* Even less bright for second immediate left and right */
+.skill.dim {
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.4);
+}
+
 
 
 /* contact section */
